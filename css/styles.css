@@ -24,9 +24,13 @@ body {
 .logo {
   color: var(--akcent);
   font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 
   text-decoration: none;
 }
+
 .logo .studio {
   color: var(--primery-text-cplor);
 }
@@ -82,14 +86,17 @@ body {
 }
 /* button two page */
 .button .secondary {
+  font-family: Roboto, sans-serif;
   color: var(--primery-text-cplor);
   background-color: var(--secondary-color-two);
   cursor: pointer;
+  font-family: Roboto, sans-serif;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
 }
+
 .button .secondary:hover,
 .button .secondary:focus {
   color: var(--primary-wite-color);
@@ -100,6 +107,7 @@ body {
 /* hero */
 .content.button {
   background-color: var(--color-fon-hed-fot);
+  text-transform: uppercase;
 }
 .content .hero-text {
   color: var(--primary-wite-color);
@@ -111,6 +119,7 @@ body {
 }
 /* work */
 .content .work-main {
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -121,6 +130,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+
 /* photo */
 .content .head-text {
   font-weight: 700;
@@ -135,7 +145,7 @@ body {
 .content.employees .fon {
   background-color: var(--primary-wite-color);
 }
-.content .employees-mine {
+.content .employees-main {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -176,7 +186,7 @@ body {
   color: #fff;
 
   font-size: 14px;
-  line-height: 1.97;
+  line-height: 1.7;
 
   text-decoration: none;
 }
@@ -184,7 +194,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
-  line-height: 1.97;
+  line-height: 1.7;
 
   text-decoration: none;
 }
