@@ -158,17 +158,17 @@ body {
 }
 
 /* content two page */
-.content .photo-text {
+.photo-text {
   text-decoration: none;
 }
-.content.photo .photo-main {
+.photo-main {
   color: var(--primery-text-cplor);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.content.photo .photo-secondary {
+.photo-secondary {
   color: var(--secondary-color);
 
   font-size: 18px;
