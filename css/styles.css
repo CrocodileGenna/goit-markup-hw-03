@@ -56,6 +56,8 @@ button {
 }
 /* button hero */
 .button .primary {
+  display: inline-block;
+
   color: var(--primary-wite-color);
   background-color: var(--akcent);
 
@@ -68,8 +70,6 @@ button {
 }
 /* button two page */
 .button .secondary {
-  margin-top: 94px;
-
   font-family: Roboto, sans-serif;
   color: var(--primery-text-cplor);
   background-color: var(--secondary-color-two);
@@ -129,7 +129,6 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   text-decoration: none;
 }
 .site-nav .link:hover,
@@ -138,6 +137,9 @@ button {
 }
 
 /* auth----------------------------------------  */
+header {
+  outline: 1px solid rgba(236, 236, 236, 1);
+}
 .site-auth {
   display: flex;
   margin-left: auto;
@@ -169,16 +171,21 @@ button {
 /* main---------------------------------------- */
 /* hero---------------------------------------- */
 .content.button {
-  background-color: var(--color-fon-hed-fot);
-  text-transform: uppercase;
-
   text-align: center;
-
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+
+  background-color: var(--color-fon-hed-fot);
+  text-transform: uppercase;
 }
 .content .hero-text {
+  display: inline-block;
+  width: 696px;
+  height: 120px;
+  padding-top: 200px;
+  text-align: center;
+
   color: var(--primary-wite-color);
   font-weight: 900;
   font-size: 44px;
@@ -194,6 +201,9 @@ button {
   margin-right: 0;
 }
 .work-main {
+  display: block;
+  margin-top: 30px;
+
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -201,7 +211,6 @@ button {
 }
 .work-secondary {
   color: var(--secondary-color);
-
   font-size: 14px;
   line-height: 1.71;
 }
@@ -215,14 +224,26 @@ button {
 }
 
 .head-text {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 93px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+}
+
+/* employees---------------------------------------- */
+.head-text-employees {
   text-align: center;
   margin-top: 94px;
   margin-bottom: 50px;
+  padding-top: 93px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
 }
-/* employees---------------------------------------- */
 .content.employees {
   background-color: var(--secondary-color-two);
 }
@@ -234,36 +255,46 @@ button {
 .fon:nth-child(+ 1) {
   margin: 0;
 }
+.photo-text-page-one {
+  display: block;
+  text-align: center;
+}
 .content .employees-main {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 30px;
 }
 .content .employees-secondary {
   color: var(--secondary-color);
 
   font-size: 16px;
   line-height: 1.18;
+
+  margin-top: 10px;
 }
 
 /* content two page---------------------------------------- */
-.container.main {
-  margin-left: auto;
-  margin-right: auto;
-}
 
+.container.main {
+  padding-top: 93px;
+}
+.container.main .secondary {
+  display: inline-block;
+  margin-right: 8px;
+}
 .content-two-page {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 94px;
 }
+.text-info-photo {
+  display: inline-block;
+}
 
 .photo-text {
   box-sizing: border-box;
-  /* border: 1px;
-  border-color: aquamarine;  */
-
   height: 404px;
   width: 370px;
   margin-right: 30px;
@@ -280,6 +311,11 @@ button {
 }
 
 .photo-main {
+  display: inline-block;
+  width: 322px;
+  height: 36;
+  text-align: left;
+
   color: var(--primery-text-cplor);
   font-weight: 700;
   font-size: 18px;
@@ -287,6 +323,12 @@ button {
   letter-spacing: 0.06em;
 }
 .photo-secondary {
+  display: inline-block;
+  width: 322px;
+  height: 30;
+  text-align: left;
+  margin-top: 4px;
+
   color: var(--secondary-color);
 
   font-size: 18px;
@@ -297,7 +339,12 @@ button {
 .footer {
   background-color: var(--color-fon-hed-fot);
 }
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .logo.footer {
+  display: block;
   color: var(--akcent);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -305,13 +352,13 @@ button {
   line-height: 1.2;
 
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .footer-studio {
   color: var(--primary-wite-color);
 }
 .footer .footer-adres {
   color: #fff;
-
   font-size: 14px;
   line-height: 1.7;
 
