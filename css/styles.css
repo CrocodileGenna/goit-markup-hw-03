@@ -39,7 +39,7 @@ b {
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 2px solid rgb(225, 169, 159); */
+  outline: 2px solid rgb(225, 169, 159);
 }
 
 /* logo----------------------------------------  */
@@ -62,7 +62,7 @@ b {
 /* BUTTON ----------------------------------------  */
 
 /* button hero ---------------------------------------- */
-.button .primary {
+.hero .primary {
   margin-top: 30px;
 
   width: 200px;
@@ -81,21 +81,20 @@ b {
 }
 
 /* button two page ---------------------------------------- */
-.conteiner .list.main {
+.two-page.conteiner .list.main {
   display: flex;
   justify-content: center;
 }
-
 .conteiner .main .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
-
 .two-page .secondary {
-  display: flex;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  border-radius: 4px;
+  border: 0ch;
 
   font-family: Roboto, sans-serif;
   color: var(--primery-text-cplor);
@@ -103,8 +102,6 @@ b {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  border-radius: 4px;
-  border-color: #fff;
 }
 
 .two-page .secondary:hover,
@@ -133,7 +130,7 @@ b {
   display: flex;
 }
 .site-nav .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 /* .site-nav .item + .item {
   margin-left: 30px;
@@ -190,7 +187,7 @@ b {
 /* content one page ---------------------------------------- */
 
 /* hero ---------------------------------------- */
-.content.button {
+.content.hero {
   text-align: center;
 
   padding-top: 200px;
@@ -210,23 +207,46 @@ b {
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
+
 /* work ---------------------------------------- */
+
+.content.work {
+  padding-top: 94px;
+}
 .content .work {
   display: flex;
-  padding-top: 94px;
 }
 .content .work .item:not(:last-child) {
   margin-right: 30px;
 }
+
+.content .work .item2 {
+  width: 270px;
+  height: 120px;
+
+  background-image: url(../images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-color-two);
+}
+/* .content .work .item2 .item3 {
+  display: flex;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 .content .work-main {
   display: flex;
   padding-bottom: 10px;
+  padding-top: 30px;
 
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
+
 .content .work-secondary {
   width: 270px;
   height: 75px;
@@ -255,14 +275,14 @@ b {
   line-height: 1.16;
   text-align: center;
 }
+
 /* employees ---------------------------------------- */
 .employees {
-  background-color: var(--secondary-color-two);
-}
-.employees .conteiner {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--secondary-color-two);
 }
+
 .employees .head-text {
   margin-bottom: 50px;
   font-weight: 700;
@@ -278,29 +298,33 @@ b {
 }
 .employees .fon {
   background-color: var(--primary-wite-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.employees-div {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .employees-main {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  justify-content: center;
+  padding-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
-.employees-secondary {
-  display: flex;
-  margin-bottom: 30px;
-  justify-content: center;
 
+.employees-secondary {
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.18;
 }
 
 /* content two page ---------------------------------------- */
-.conteiner.two-page {
+main.main {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -355,12 +379,11 @@ b {
 
 /* FOOTER ---------------------------------------- */
 footer {
-  background-color: var(--color-fon-hed-fot);
-}
-.footer.conteiner {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--color-fon-hed-fot);
 }
+
 .footer .logo {
   display: block;
   margin-bottom: 20px;
