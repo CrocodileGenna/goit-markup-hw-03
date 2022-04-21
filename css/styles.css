@@ -42,23 +42,6 @@ b {
   /* outline: 2px solid rgb(225, 169, 159); */
 }
 
-/* logo----------------------------------------  */
-
-.logo {
-  margin-right: 93px;
-
-  color: var(--akcent);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-.logo .studio {
-  color: var(--primery-text-cplor);
-}
-
 /* BUTTON ----------------------------------------  */
 
 /* button hero ---------------------------------------- */
@@ -114,6 +97,9 @@ b {
 
 /* HEADER ---------------------------------------- */
 
+header {
+  border: 1px solid #ececec;
+}
 .main-meny {
   display: flex;
 }
@@ -123,6 +109,22 @@ b {
 }
 .site-nav .link.curent {
   color: var(--akcent);
+}
+
+/* logo----------------------------------------  */
+.logo {
+  margin-right: 93px;
+
+  color: var(--akcent);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo .studio {
+  color: var(--primery-text-cplor);
 }
 
 /* nav ---------------------------------------- */
@@ -355,12 +357,17 @@ main.main {
   padding: 0;
   text-decoration: none;
 }
-.photo-main {
-  display: block;
-  padding-bottom: 8px;
-  padding-top: 20px;
-  padding-left: 24px;
 
+.photo-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border: 1px solid #eeeeee;
+}
+
+.photo-main {
   color: var(--primery-text-cplor);
   font-weight: 700;
   font-size: 18px;
@@ -368,10 +375,6 @@ main.main {
   letter-spacing: 0.06em;
 }
 .photo-secondary {
-  display: block;
-  padding-left: 24px;
-  padding-bottom: 20px;
-
   color: var(--secondary-color);
   font-size: 18px;
   line-height: 1.97;
